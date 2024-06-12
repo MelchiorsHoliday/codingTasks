@@ -1,0 +1,300 @@
+/* static/css/style.css */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    /* border: 15px solid blue; */
+    margin: 0;
+    padding: 0;    
+    background-image: url('/static/images/new_photos/tatami.jpeg');
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+    min-height: 1500px;
+    min-width: 2000px;
+}
+
+h1 {
+    top: 5%;
+    color: #333;
+    text-align: center;
+    font-style: italic;
+    margin-top: 20px;
+    position: fixed;
+    left: 25%;
+    right: 25%;
+}
+
+.form-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#desk {
+    display: flex;
+    background-image: url('/static/images/new_photos/table.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-height: 75%;
+    min-height: 70%;
+    max-width: 300%; 
+    min-width: 90%;
+    /* border: 5px solid red; */
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 15%;
+    left: 5%;
+}
+
+#on_desk {
+    display: flex;
+    max-height: 150%;
+    min-height: 200px; 
+    max-width: 150%;
+    min-width: 100%;
+    /* border: 5px solid yellow; */
+    z-index: 1;
+
+}
+
+#scroll_open {
+    max-width: 100%;
+    max-height: 100%;
+    transform: rotate(85deg);
+    left: 18%;
+    top: 0%;
+    position: absolute;
+}
+
+#scroll_closed {
+    max-width: 70%;
+    max-height: 70%;
+    transform: rotate(11deg);
+    right: 12%;
+    top: 6%;
+    size: 80%;
+    position: absolute;
+}
+
+#create_notes {
+    /* border: 10px solid green; */
+    width: fit-content;
+    height: auto;
+    transform: rotate(354deg);
+    left: 16%;
+    top: 40%;
+    position: absolute;
+    background-image: url();
+    font-size: large;
+    color: black;
+}
+
+#view_notes {
+    /* border: 10px solid cyan; */
+    width: fit-content;
+    transform: rotate(281deg);
+    top: 36%;
+    right: 19%;
+    position: absolute;
+    font-size: large;
+    color: white;
+    
+}
+
+button {
+    padding: 2vh 4vw;
+    font-size: 2vh;
+    /* color: #fff; */
+    /* background-color: #dbff80; */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    min-width: 10vw;
+    
+}
+
+.note-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.note-button .button {
+    display: inline-block;
+    padding: 2.5vh 5vw;
+    font-size: 2.5vh;
+    /* background-color: #e7f0d1; */
+    text-decoration: black;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    color: black;
+    font-family: 'Georgia', serif;
+    font-size: 1.2em;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    text-align: justify;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+#view_button {
+    display: inline-block;
+    font-size: 2.5vh;
+    /* background-color: #e7f0d1; */
+    text-decoration: black;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    color: black;
+    font-family: 'Georgia', serif;
+    font-size: 1.2em;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    text-align: justify;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+
+}
+
+.note-button .button:hover {
+    background-color: #e7f0d1;
+    opacity: 70%;
+}
+
+#scroll_full {
+    /* border: 2px solid blue; */
+    max-width: 40%;
+    max-height: auto;
+    transform: translate(-50%,-24%) rotate(270deg);
+    right: 10%;
+    position: absolute; 
+    top: 1%;
+    z-index: -1;
+}
+
+.menu {
+    display: flexbox;
+    /* border: 3px solid green; */
+    position: absolute;
+    transform: translate(153%,-100%);
+    /* display: inline-block; */
+    padding: 2.5vh 5vw;
+    font-size: 2.5vh;
+    /* background-color: #e7f0d1; */
+    text-decoration: black;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    color: black;
+    font-family: 'Georgia', serif;
+    font-size: 1.2em;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    text-align: justify;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+
+}
+
+.lists {
+    /* border: 3px solid red; */
+    transform: translate(150%,-10%);
+    position: absolute;
+    /* display: inline-block; */
+    padding: 2.5vh 5vw;
+    font-size: 2.5vh;
+    /* background-color: #e7f0d1; */
+    text-decoration: black;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    color: black;
+    font-family: 'Georgia', serif;
+    font-size: 1.2em;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    text-align: justify;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+
+}
+
+.form {
+    transform: translate(100%,40%);
+    position: fixed;
+    padding: 2.5vh 5vw;
+    font-size: 2.5vh;
+    text-decoration: black;
+    border-radius: 5px;
+    color: black;
+    font-family: 'Georgia', serif;
+    font-size: 1.2em;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.note_content {
+    transform: translate(145%,0%);
+    position: fixed;
+    padding: 2.5vh 5vw;
+    font-size: 2.5vh;
+    text-decoration: black;
+    border-radius: 5px;
+    color: black;
+    font-family: 'Georgia', serif;
+    font-size: 1.2em;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+#delete_button {
+    transform: translate(275%,200%);
+    position: absolute;
+    padding: 2.5vh 5vw;
+    font-size: 2.5vh;
+    text-decoration: black;
+    border-radius: 5px;
+    color: black;
+    font-family: 'Georgia', serif;
+    font-size: 1.2em;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    text-align: justify;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
