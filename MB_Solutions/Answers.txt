@@ -1,0 +1,16 @@
+● What is normalisation?
+The process of organising database data to reduce redundancy and improve data integrity.
+
+● When is a table in 1NF?
+A table is in 1NF if it has only atomic (indivisible) values and each entry in a column is of the same data type.
+
+● When is a table in 2NF?
+A table is in 2NF if it is in 1NF and all non-key attributes are fully functionally dependent on the primary key.
+
+
+● When is a table in 3NF?
+A table is in 3NF if it is in 2NF and all the attributes are functionally dependent only on the primary key, not on any other non-key attributes.
+
+● What is a foreign key?
+A column or set of columns in one table that uniquely identifies rows in another table, establishing a link between the tables.
+
