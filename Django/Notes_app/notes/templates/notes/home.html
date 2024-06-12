@@ -1,0 +1,46 @@
+{% extends 'notes/base.html' %}
+
+{% block title %}Home Page{% endblock %}
+
+{% block content %}
+<h1>Notes App</h1>
+<div id="desk">
+    <div id="on_desk">
+        <img id = 'scroll_open' src="static/images/new_photos/open_scroll.png">
+        <img id = 'scroll_closed' src="/static/images/new_photos/scroll_closed.png">
+        <div id="create_notes">
+            <!-- Button to create a new note -->
+            <div class="note-button">
+                <a href="{% url 'note_create' %}" class="button">Create a New Note</a>
+            </div>
+        </div>
+        <div id="view_notes">
+            <!-- Button to view notes -->
+            <div id="view_button" class="note-button">
+                <a href="{% url 'note_list' %}" class="button">View Notes</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- <h1>Fill in Your Details</h1>
+<div class="form-container">
+    <form action="" method="get">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" autocomplete="off" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" name="email" autocomplete="off" required>
+        </div>
+        <div class="form-group">
+            <label for="birthday">Birthday</label>
+            <input type="date" id="birthday" name="birthday" required>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</div> -->
+
+{% endblock %}

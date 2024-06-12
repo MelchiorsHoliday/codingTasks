@@ -1,0 +1,27 @@
+{% extends 'notes/base.html' %}
+
+{% block content %}
+<h1>{{ note.title }}</h1>
+<div id="desk">
+    <div id="on_desk">
+        <div id="scroll_container">
+            <img id = 'scroll_full' src="/static/images/new_photos/full_scroll.png">
+        </div>
+    <div class="note_content">
+        <p>{{ note.content }}</p>
+        <a href="{% url 'note_update' note.pk %}">Edit</a>
+    </div>
+    <div>
+        <form method="post" action="{% url 'note_delete' note.pk %}">
+            {% csrf_token %}
+            <button type="submit" id="delete_button">Delete</button>
+        </form>
+    </div>    
+    <div class = "menu">
+        <a href="{% url 'note_list' %}">Back to list</a>
+    </div>
+    </div>
+</div>
+
+
+{% endblock %}
